@@ -1,25 +1,66 @@
+$peter-river: #3498DB;
+$belize-hole: #2980B9;
+$wet-asphault: #34495E;
+$midnight-blue: #2C3E50;
+$sun-flower: #F1C40F;
+$orange: #F39C12;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: $peter-river;
+}
+a:hover {
+  color: $belize-hole;
+  text-decoration: none;
+}
+
+.btn {
+  color: #FFF;
+  font-size: 22px;
+  line-height: 1.8;
+  background: $sun-flower;
+  background: rgba(241, 196, 15, 0.8);
+  border: 2px solid $sun-flower;
+  border-radius: 2px;
+  transition: all 0.09s linear;
+}
+.btn:hover {
+  color: #FFF;
+  background: $sun-flower;
+  background: rgba(241, 196, 15, 0.92);
+  border-color: $sun-flower;
+  box-shadow: 0px 0px 15px 3px rgba(241, 196, 15, 0.45);
+}
+.btn-lg {
+  padding: 13px 60px;
+}
+
+
 .navbar-main {
   border: none;
-  background-color: #16a085;
+  background-color: $wet-asphault;
   text-transform: uppercase;
   transition: all 0.15s linear;
   .navbar-brand,
   .navbar-nav > li > a {
-    color: #fff;
+    color: #FFF;
     transition: all 0.1s linear;
   }
   .navbar-brand:hover {
-    color: #fff;
-
+    color: #FFF;
   }
   .navbar-nav > li > a:hover {
-    color: #f1c40e;
+    color: $sun-flower;
     background-color: transparent;
   }
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #FFF;
 }
 
 @media (min-width: 768px) {
@@ -28,18 +69,18 @@
     background: transparent;
     .navbar-brand,
     .navbar-nav > li > a {
-      color: #e7e7e7;
+      color: #E7E7E7;
       font-size: 15px;
       padding: 20px 12px;
     }
     .navbar-brand:hover {
-      color: #e7e7e7;
+      color: #E7E7E7;
     }
   }
 
   .navbar-main-scroll {
     margin-top: 0;
-    background: #16a085;
+    background: $wet-asphault;
     transition: all 0.15s linear;
   }
 }
@@ -50,6 +91,77 @@
     .navbar-nav > li > a {
       padding: 22px 14px;
       font-size: 16px;
+    }
+  }
+}
+
+
+.header-home {
+  position: relative;
+  padding: 120px 0 60px;
+  text-align: center;
+  background: url(http://framegeek.com/wp-content/uploads/2011/04/Grotesque-Eyewear-Opens-Boutique-in-Rottweil-5.jpg) 70% center no-repeat;
+  background-size: cover;
+  .container {
+    position: relative;
+    z-index: 11;
+  }
+  h1 {
+    margin-top: 0;
+    color: #FFF;
+    font-size: 30px;
+  }
+  h2 {
+    color: #E7E7E7;
+    font-size: 20px;
+  }
+  .btn {
+    margin: 30px auto;
+  }
+}
+
+.header-home:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+  opacity: 0.88;
+}
+
+@media (max-width: 767px) {
+  .header-home {
+    .btn {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header-home {
+    padding: 170px 0 70px;
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    .btn {
+      margin: 60px auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .header-home {
+    padding: 190px 0 90px;
+    h1 {
+      font-size: 44px;
     }
   }
 }
