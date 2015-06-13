@@ -11,6 +11,8 @@ $wet-asphault: #34495E;
 $midnight-blue: #2C3E50;
 $sun-flower: #F1C40F;
 $orange: #F39C12;
+$clouds: #ECF0F1;
+$asbestos: #7F8C8D;
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -23,6 +25,11 @@ a {
 a:hover {
   color: $belize-hole;
   text-decoration: none;
+}
+
+/* Icons */
+.fa-7x {
+  font-size: 7em;
 }
 
 /* Buttons */
@@ -196,11 +203,10 @@ a:hover {
   h2 {
     text-align: center;
     font-size: 36px;
-    color: $wet-asphault;
     margin-bottom: 30px;
   }
   .col-sm-8 {
-    border-left: 1px solid #e5e5e5;
+    border-left: 1px solid $clouds;
   }
   img {
     margin-right: auto;
@@ -226,6 +232,36 @@ a:hover {
     }
     h3 {
       font-size: 20px;
+    }
+  }
+}
+
+/*
+ * Services
+ *
+ * Overview of the primary services offered
+ */
+
+.services {
+  padding: 30px 0 40px;
+  background-color: $clouds;
+  text-align: center;
+  h2 {
+    font-size: 36px;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  .service {
+    .icon {
+      color: $wet-asphault;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 300;
+    }
+    .eye-exams {
+      padding: 17px 0 17px;
     }
   }
 }
