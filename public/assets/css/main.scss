@@ -311,3 +311,22 @@ a:hover {
     }
   }
 }
+
+/*
+ * Footer
+ *
+ * Marks the end of the page
+ */
+
+.footer {
+  background-color: $wet-asphault;
+  .footer-text {
+    padding: 30px 0;
+    text-align: center;
+    p {
+      margin-bottom: 0;
+      color: $clouds;
+      font-size: 16px;
+    }
+  }
+}
