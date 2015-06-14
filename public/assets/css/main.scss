@@ -16,6 +16,11 @@ $silver: #BDC3C7;
 $concrete: #95A5A6;
 $asbestos: #7F8C8D;
 
+/* Body */
+body {
+  position: relative;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -76,6 +81,7 @@ a:hover {
   .navbar-brand:hover {
     color: #FFF;
   }
+  .navbar-nav > .active > a,
   .navbar-nav > li > a:hover {
     color: $sun-flower;
     background-color: transparent;
