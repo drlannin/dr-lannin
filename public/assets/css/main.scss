@@ -12,6 +12,8 @@ $midnight-blue: #2C3E50;
 $sun-flower: #F1C40F;
 $orange: #F39C12;
 $clouds: #ECF0F1;
+$silver: #BDC3C7;
+$concrete: #95A5A6;
 $asbestos: #7F8C8D;
 
 /* Typography */
@@ -254,7 +256,7 @@ a:hover {
   }
   .service {
     .icon {
-      color: $wet-asphault;
+      color: rgba(52, 73, 94, 0.92);
     }
     p {
       font-size: 17px;
@@ -262,6 +264,50 @@ a:hover {
     }
     .eye-exams {
       padding: 17px 0 17px;
+    }
+  }
+}
+
+/*
+ * Contact
+ *
+ * Information needed to contact the office
+ */
+
+.contact {
+  padding: 30px 0 40px;
+  background-color: rgba(52, 73, 94, 0.92);
+  color: $clouds;
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .contact-info {
+    padding-top: 50px;
+    text-align: right;
+    font-size: 16px;
+    p {
+      margin-bottom: 8px;
+    }
+    a {
+      color: $silver;
+    }
+    a:hover {
+      color: $concrete;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    .contact-info {
+      padding-top: 0;
+      text-align: center;
+    }
+    .map iframe {
+      display: block;
+      margin: 30px auto 0;
     }
   }
 }
