@@ -30,6 +30,10 @@ Compile the Harp app into the root of the repository, where it will be served by
 
     harp compile _harp ./
 
+Now, remove the `_harp` directory.
+
+    rm -rf _harp
+
 To finish the deployment, add all the files, commit them, and push them to GitHub:
 
 ```
