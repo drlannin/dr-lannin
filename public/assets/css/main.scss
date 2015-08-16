@@ -71,7 +71,6 @@ section {
 
 .navbar-main {
   border: none;
-  background-color: $wet-asphault;
   text-transform: uppercase;
   transition: all 0.15s linear;
   .navbar-brand,
@@ -111,7 +110,7 @@ section {
 
   .navbar-main-scroll {
     margin-top: 0;
-    background: $wet-asphault;
+    background: rgba(52, 73, 94, 0.92);
     transition: all 0.15s linear;
   }
 }
@@ -276,7 +275,7 @@ section {
  */
 
 .contact {
-  background-color: rgba(52, 73, 94, 0.92);
+  background-color: $wet-asphault;
   color: $clouds;
   h2 {
     margin-bottom: 30px;
@@ -311,13 +310,13 @@ section {
  */
 
 .footer {
-  background-color: $wet-asphault;
+  background-color: #333;
   .footer-text {
     padding: 30px 0;
     text-align: center;
     p {
       margin-bottom: 0;
-      color: $clouds;
+      color: #777;
       font-size: 16px;
     }
   }
