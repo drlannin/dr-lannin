@@ -5,16 +5,9 @@
  */
 
 /* Colors */
-$peter-river: #3498DB;
-$belize-hole: #2980B9;
 $wet-asphault: #34495E;
-$midnight-blue: #2C3E50;
 $sun-flower: #F1C40F;
-$orange: #F39C12;
 $clouds: #ECF0F1;
-$silver: #BDC3C7;
-$concrete: #95A5A6;
-$asbestos: #7F8C8D;
 
 /* Body */
 body {
@@ -27,10 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $peter-river;
+  color: $sun-flower;
 }
 a:hover {
-  color: $belize-hole;
+  color: $sun-flower;
   text-decoration: none;
 }
 
@@ -294,12 +287,6 @@ section {
     font-size: 16px;
     p {
       margin-bottom: 8px;
-    }
-    a {
-      color: $silver;
-    }
-    a:hover {
-      color: $concrete;
     }
   }
 }
