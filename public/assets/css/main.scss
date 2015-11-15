@@ -6,12 +6,13 @@
 
 /* Colors */
 $wet-asphault: #34495E;
-$sun-flower: #F1C40F;
+$turquoise: #1ABC9C;
 $clouds: #ECF0F1;
 
 /* Body */
 body {
   position: relative;
+  font-family: 'Oxygen', sans-serif;
 }
 
 /* Typography */
@@ -20,10 +21,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $sun-flower;
+  color: $turquoise;
 }
 a:hover {
-  color: $sun-flower;
+  color: $turquoise;
   text-decoration: none;
 }
 
@@ -37,18 +38,18 @@ a:hover {
   color: #FFF;
   font-size: 22px;
   line-height: 1.8;
-  background: $sun-flower;
-  background: rgba(241, 196, 15, 0.8);
-  border: 2px solid $sun-flower;
+  background: $turquoise;
+  background: rgba(26, 188, 156, 0.8);
+  border: 2px solid $turquoise;
   border-radius: 2px;
   transition: all 0.09s linear;
 }
 .btn:hover {
   color: #FFF;
-  background: $sun-flower;
-  background: rgba(241, 196, 15, 0.92);
-  border-color: $sun-flower;
-  box-shadow: 0px 0px 15px 3px rgba(241, 196, 15, 0.45);
+  background: $turquoise;
+  background: rgba(26, 188, 156, 0.92);
+  border-color: $turquoise;
+  box-shadow: 0px 0px 15px 3px rgba(26, 188, 156, 0.45);
 }
 .btn-lg {
   padding: 13px 60px;
@@ -90,7 +91,7 @@ section {
   }
   .navbar-nav > .active > a,
   .navbar-nav > li > a:hover {
-    color: $sun-flower;
+    color: $turquoise;
     background-color: transparent;
   }
 }
@@ -128,6 +129,9 @@ section {
       padding: 22px 14px;
       font-size: 16px;
     }
+    .navbar-brand {
+      font-size: 20px;
+    }
   }
 }
 
@@ -141,7 +145,7 @@ section {
   position: relative;
   padding: 120px 0 60px;
   text-align: center;
-  background: url(../img/header-background.jpg) 70% center no-repeat;
+  background: url(../img/ocean.jpg) 70% center no-repeat;
   background-size: cover;
   .container {
     position: relative;
@@ -170,7 +174,7 @@ section {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgba(52, 73, 94, 0.75);
+  background-color: rgba(52, 73, 94, 0.65);
   opacity: 0.88;
 }
 
@@ -203,6 +207,9 @@ section {
     padding: 190px 0 90px;
     h1 {
       font-size: 44px;
+    }
+    h2 {
+      padding: 0 40px;
     }
   }
 }
@@ -317,6 +324,14 @@ section {
   text-align: center;
   .btn {
     margin: 30px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .forms {
+    p {
+      padding: 0 60px;
+    }
   }
 }
 
