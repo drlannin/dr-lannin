@@ -63,6 +63,11 @@ section {
   }
 }
 
+/* Lead */
+.lead {
+  padding-top: 10px;
+}
+
 /*
  * Navbar
  * 
@@ -277,9 +282,6 @@ section {
 
 .eyewear {
   text-align: center;
-  .lead {
-    padding-top: 10px;
-  }
   img {
     position: relative;
     top: 50%;
@@ -301,6 +303,20 @@ section {
     .first-row {
       padding-top: 70px;
     }
+  }
+}
+
+/*
+ * Forms
+ *
+ * Contains forms that patients can print out and bring to the office
+ */
+
+.forms {
+  background-color: $clouds;
+  text-align: center;
+  .btn {
+    margin: 30px auto;
   }
 }
 
