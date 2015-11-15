@@ -10,36 +10,20 @@ Start up the development server.
 
     harp server
 
-The application will now be running at [http://localhost:9000](http://localhost:9000).
+The application will now be running at [http://localhost:9000](http://localhost:9000). To make changes to the app, edit the files located in the `_harp` folder.
 
 ## Deployment
 
-This site is deployed using [GitHub Pages](https://pages.github.com/). To begin, checkout the `gh-pages` branch, which will contain the compiled HTML, CSS, and JavaScript generated from the Harp app. 
-
-    git checkout gh-pages
-
-In order to re-generate the site, clear out all the existing files.
-
-    git rm -rf .
-
-Clone the master branch of the app into a folder named `_harp` so that it can be used to generate the site.
-
-    git clone https://github.com/mlannin23/dr-lannin _harp
-
-Compile the Harp app into the root of the repository, where it will be served by GitHub Pages.
+This site is deployed using [GitHub Pages](https://pages.github.com/), and it is served from the root of the repository. So we will want to compile the Harp app there.
 
     harp compile _harp ./
 
-Now, remove the `_harp` directory.
-
-    rm -rf _harp
-
-To finish the deployment, add all the files, commit them, and push them to GitHub:
+To deploy the app, add all the files, commit them, and push them to GitHub:
 
 ```
 git add -A
-git commit -m "Deploy Harp app"
-git push origin gh-pages
+git commit -m "Deploy"
+git push origin master
 ```
 
-The app will now be available at [mlannin23.github.io/dr-lannin](http://mlannin23.github.io/dr-lannin/).
+The app will now be available at [drlannin.github.io](http://drlannin.github.io/).
