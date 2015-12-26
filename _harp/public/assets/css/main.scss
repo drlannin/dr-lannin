@@ -215,6 +215,29 @@ section {
 }
 
 /*
+ * Callout
+ *
+ * Connect to Yelp and Facebook
+ */
+
+.callout {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  p {
+    margin-bottom: 0;
+  }
+  .yelp {
+    margin: 0 5px 10px;
+  }
+  .facebook {
+    margin: 0 0 5px -8px;
+  }
+}
+
+/*
  * About
  *
  * Section providing background on Dr. Lannin
